@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/84ad9ecfaa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+                <img src="logo.3.PNG"    width="100px" height="80px"  style="margin-left: -150px;"    class="logo"></img>   
+            <ul id="sidemenu" >
+                
+                <li> <a href="#header">Home</a> </li>
+                <li> <a href="#about">About</a> </li>
+                <li> <a href="#services">Services</a> </li>
+                <!-- <li> <a href="#">Portfolio</a> </li> -->
+                <li> <a href="#contact">Contact</a> </li>
+                <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+               
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+           
+        </nav>
+            <div class="header-text">
+                <p> Software Developer </p>
+                <h1> Hi, I'm <span>Abhishek Gore</span><br> from SCOE, Pune </h1>
+            </div>
+       
+    </div>
+</div>
+<!------------about --------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG20220916164109.jpg" alt="col 1 img ">
+            </div>
+            <div class="about-col-2">
+                <h1  class="sub-title">
+                    About Me
+                </h1>
+                <p>
+                    Hi, I'm <span style="color: #b54769;"> Abhishek Gore.</span> 
+
+I'm an aspiring Software Engineer ready to embark on a journey in the tech world. With a pursuing degree in SCOE from SPPU, I'm excited to apply my knowledge and passion for technology.
+
+My coding journey began with a fascination for solving real-world problems. During my academic years, I gained hands-on experience in front-end technology like<span style="color: #b54769;"> html,css and javascript</span> while <span style="color: #b54769;">java</span> as a backend and oop language.
+
+I'm eager to contribute to innovative projects and collaborate with like-minded individuals. While I'm just starting, I'm committed to learning and growing in the world of software development.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                    <p class="tab-links " onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li> <span> Java Core</span><br>Fundamental concepts of java language </li>
+                        <li> <span> Web Development</span><br>Web App Development </li>
+                        
+                    </ul>
+                </div>
+                    
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li> <span> Web Development Intern </span><br> Codeclasue (Feb - March 2023)</li>
+                        <li> <span> Junior- java Intern </span><br>App Development (Feb- March 2023) </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li> <span>10 th</span><br>Maharashtra Vidhyala Nilanga  with 93.60%</li>
+                        <li> <span> 12th</span><br>Dayanand Science Junior College , Latur with 78.30%</li>
+                        <li><span> B.E</span><br> Sinhgad College Of Enginnering, Pune with 8.54 average cgpa</li>
+                        
+                    </ul>
+                </div>
+                <br>
+
+                <!-- <img src="IMG20230216175426.jpg" alt="col 2 img" height="700 px" width="600px" > -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--------------------Services-------------------->
+<div id="services">
+    <div class="container" >
+        <h1 class="sub-title">My Services </h1>
+        <div class="services-list">
+            <div class="content">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p> </p>
+                <a href="https://en.wikipedia.org/wiki/Web_development">Learn more</a>
+            </div>
+           
+
+
+        </div>
+    </div>
+
+
+</div>
+<br><br><br><br>
+
+<!------contact ----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title"> Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>abhishekgore211@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8669773870</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/abhishek.gore.735"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/goreabhishek211?t=t6tbM0mf7KtE_jEVM7hVKw&s=08"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/invites/contact/?i=1kd2nz03b5zmq&utm_content=2i0zrgm"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishek-gore-b6b656212"><i class="fa-brands fa-linkedin"></i></a>
+                    
+            
+                </div>
+                <a href="Resume-ABHISHEK-GORE.pdf"  download class="btn btn2"><span><i class="fa-solid fa-file"></i> </span> Download CV</a>
+               
+                
+            </div>
+           
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="text" name="email" placeholder="your email-id" required>
+                    <textarea name="message" row="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </form>
+                <span id="msg" style="margin-top: 30px;padding-top: 10px;">
+                    
+
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="copyright">
+        <p> 
+            Copyright &copy; AG made with
+            <i class="fa-solid fa-heart"></i>
+        </p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+<script>
+    var sidemeu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="5px";
+        sidemeu.style.borderRadius="6px";
+
+    }
+    function closemenu(){
+        sidemeu.style.right="-450px";
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxJqozjFtEpixFc5RnAp2svWhNG82sRfM8K0n4zPM0BxLJLsK5dpeQu5oAJxVmbCdbz/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+
+    
+</body>
+</html>
